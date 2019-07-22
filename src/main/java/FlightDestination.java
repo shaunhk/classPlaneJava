@@ -1,7 +1,0 @@
-public enum FlightDestination {
-
-    GLA;
-
-}
-
-

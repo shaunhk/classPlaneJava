@@ -19,7 +19,7 @@ public class FlightTest {
         passenger2 = new Passenger("Homer", 1);
         plane = new Plane(PlaneType.BOEING747);
         date = new Date(2019,6,15,14,22);
-        flight = new Flight(plane, "FR756", FlightDestination.GLA, FlightDeparture.SPR, date);
+        flight = new Flight(plane, "FR756", Airport.GLA, Airport.SPR, date);
     }
 
     @Test
@@ -39,12 +39,12 @@ public class FlightTest {
 
     @Test
     public void flightHasDestination(){
-        assertEquals(FlightDestination.GLA, flight.getDestination());
+        assertEquals(Airport.GLA, flight.getDestination());
     }
 
     @Test
     public void flightHasDepartureAirport(){
-        assertEquals(FlightDeparture.SPR, flight.getDeparture());
+        assertEquals(Airport.SPR, flight.getDeparture());
     }
 
     @Test

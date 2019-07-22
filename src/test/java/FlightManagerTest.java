@@ -20,7 +20,7 @@ public class FlightManagerTest {
         passenger2 = new Passenger("Homer", 1);
         plane = new Plane(PlaneType.BOEING747);
         date = new Date(2019,6,15,14,22);
-        flight = new Flight(plane, "FR756", FlightDestination.GLA, FlightDeparture.SPR, date);
+        flight = new Flight(plane, "FR756", Airport.GLA, Airport.SPR, date);
         flightManager = new FlightManager(flight);
     }
 
